@@ -8,7 +8,7 @@ const ProjectsData = [
     title: "Tic Tac Toe Game", 
     description: "A simple tic tac toe game built with Javascript...", 
     technologies: ["HTML", "CSS", "JavaScript"] ,
-     demo: "https://vercel.app",
+     demo: "https://tic-tac-toe-games-five.vercel.app",
     github: "https://github.com/razercode-dev/TicTacToe-Games",
   },
   { 
@@ -17,7 +17,7 @@ const ProjectsData = [
     title: "Gradient Color Generator", 
     description: "A simple gradient color generator built with Javascript...", 
     technologies: ["HTML", "CSS", "JavaScript"] ,
-     demo: "https://vercel.app",
+     demo: "https://gradient-color-generator-delta.vercel.app",
     github: "https://github.com/razercode-dev/gradient-color-generator",
   },
   { 
@@ -26,7 +26,7 @@ const ProjectsData = [
     title: "Dynamic Calendar", 
     description: "A dynamic calendar application built with Javascript...", 
     technologies: ["HTML", "CSS", "JavaScript"] ,
-     demo: "https://vercel.app",
+     demo: "https://dynamic-calendar-zeta.vercel.app",
     github: "https://github.com/razercode-dev/dynamic-calendar",
 
   },
@@ -36,7 +36,7 @@ const ProjectsData = [
     title: "Text to Speech Converter", 
     description: "A simple text to speech converter built with Javascript...", 
     technologies: ["HTML", "CSS", "JavaScript"] ,
-    demo: "https://vercel.app",
+    demo: "https://texttospeech-converter.vercel.app",
     github: "https://github.com/razercode-dev/texttospeech-converter",
   },
   { 
@@ -45,17 +45,26 @@ const ProjectsData = [
     title: "Age Calculator", 
     description: "A simple age calculator built with Javascript...", 
     technologies: ["HTML", "CSS", "JavaScript"], 
-    demo: "https://vercel.app",
+    demo: "https://age-calculator-one-lyart.vercel.app",
     github: "https://github.com/razercode-dev/age-calculator",
   },
   { 
     id: "6", 
     image: "/6.png", 
-    title: "SimpleCalculator", 
+    title: "Simple Calculator", 
     description: "A simple age calculator built with Javascript...", 
     technologies: ["React", "Tailwind CSS", "Vite"] ,
     demo: "https://simple-calculator-mocha-alpha.vercel.app/",
     github: "https://github.com/razercode-dev/Simple-Calculator",
+  },
+   { 
+    id: "7", 
+    image: "/7.png", 
+    title: "Tic Tac Toe", 
+    description: "A animated and interactive tic tac toe games.", 
+    technologies: ["React", "Tailwind CSS", "Vite"] ,
+    demo: "https://tictactoe-games-v2.vercel.app/",
+    github: "https://github.com/razercode-dev/TicTacToeGames-V2",
   },
 ]
 
