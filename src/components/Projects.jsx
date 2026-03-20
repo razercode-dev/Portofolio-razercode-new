@@ -2,66 +2,66 @@ import PropTypes from "prop-types";
 import { motion } from "framer-motion"
 
 const ProjectsData = [
-  { 
+  {
     id: "1",
-    image: "/1.png", 
-    title: "Tic Tac Toe Game", 
-    description: "A simple tic tac toe game built with Javascript...", 
+    image: "/1.png",
+    title: "Tic Tac Toe Game",
+    description: "A simple tic tac toe game built with Javascript...",
     technologies: ["HTML", "CSS", "JavaScript"] ,
      demo: "https://tic-tac-toe-games-five.vercel.app",
     github: "https://github.com/razercode-dev/TicTacToe-Games",
   },
-  { 
-    id: "2", 
-    image: "/2.png", 
-    title: "Gradient Color Generator", 
-    description: "A simple gradient color generator built with Javascript...", 
+  {
+    id: "2",
+    image: "/2.png",
+    title: "Gradient Color Generator",
+    description: "A simple gradient color generator built with Javascript...",
     technologies: ["HTML", "CSS", "JavaScript"] ,
      demo: "https://gradient-color-generator-delta.vercel.app",
     github: "https://github.com/razercode-dev/gradient-color-generator",
   },
-  { 
-    id: "3", 
-    image: "/3.png", 
-    title: "Dynamic Calendar", 
-    description: "A dynamic calendar application built with Javascript...", 
+  {
+    id: "3",
+    image: "/3.png",
+    title: "Dynamic Calendar",
+    description: "A dynamic calendar application built with Javascript...",
     technologies: ["HTML", "CSS", "JavaScript"] ,
      demo: "https://dynamic-calendar-zeta.vercel.app",
     github: "https://github.com/razercode-dev/dynamic-calendar",
 
   },
-  { 
-    id: "4", 
-    image: "/4.png", 
-    title: "Text to Speech Converter", 
-    description: "A simple text to speech converter built with Javascript...", 
+  {
+    id: "4",
+    image: "/4.png",
+    title: "Text to Speech Converter",
+    description: "A simple text to speech converter built with Javascript...",
     technologies: ["HTML", "CSS", "JavaScript"] ,
     demo: "https://texttospeech-converter.vercel.app",
     github: "https://github.com/razercode-dev/texttospeech-converter",
   },
-  { 
-    id: "5", 
-    image: "/5.png", 
-    title: "Age Calculator", 
-    description: "A simple age calculator built with Javascript...", 
-    technologies: ["HTML", "CSS", "JavaScript"], 
+  {
+    id: "5",
+    image: "/5.png",
+    title: "Age Calculator",
+    description: "A simple age calculator built with Javascript...",
+    technologies: ["HTML", "CSS", "JavaScript"],
     demo: "https://age-calculator-one-lyart.vercel.app",
     github: "https://github.com/razercode-dev/age-calculator",
   },
-  { 
-    id: "6", 
-    image: "/6.png", 
-    title: "Simple Calculator", 
-    description: "A simple age calculator built with Javascript...", 
+  {
+    id: "6",
+    image: "/6.png",
+    title: "Simple Calculator",
+    description: "A simple calculator responsive and useable...",
     technologies: ["React", "Tailwind CSS", "Vite"] ,
     demo: "https://simple-calculator-mocha-alpha.vercel.app/",
     github: "https://github.com/razercode-dev/Simple-Calculator",
   },
-   { 
-    id: "7", 
-    image: "/7.png", 
-    title: "Tic Tac Toe", 
-    description: "A animated and interactive tic tac toe games.", 
+   {
+    id: "7",
+    image: "/7.png",
+    title: "Tic Tac Toe",
+    description: "A animated and interactive tic tac toe games.",
     technologies: ["React", "Tailwind CSS", "Vite"] ,
     demo: "https://tictactoe-games-v2.vercel.app/",
     github: "https://github.com/razercode-dev/TicTacToeGames-V2",
@@ -101,9 +101,9 @@ const ProjectsCard = ({ project }) => (
 
         <div className="flex flex-wrap gap-3">
           {project.technologies.map((tech) => (
-            <span 
-              key={tech} 
-              className="rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 px-4 py-2 text-sm font-medium text-cyan-400 backdrop-blur-sm"
+            <span
+              key={tech}
+              className="px-4 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-400 backdrop-blur-sm"
             >
               {tech}
             </span>
@@ -113,7 +113,7 @@ const ProjectsCard = ({ project }) => (
   <a
     href={project.demo}
     target="_blank"
-    className="rounded-lg bg-cyan-500 px-4 py-2 text-sm font-semibold text-white hover:bg-cyan-600 transition"
+    className="px-4 py-2 text-sm font-semibold text-white transition rounded-lg bg-cyan-500 hover:bg-cyan-600"
   >
     Live Demo
   </a>
@@ -121,7 +121,7 @@ const ProjectsCard = ({ project }) => (
   <a
     href={project.github}
     target="_blank"
-    className="rounded-lg border border-cyan-500 px-4 py-2 text-sm font-semibold text-cyan-400 hover:bg-cyan-500 hover:text-white transition"
+    className="px-4 py-2 text-sm font-semibold transition border rounded-lg border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white"
   >
     GitHub
   </a>
@@ -144,7 +144,7 @@ ProjectsCard.propTypes = {
 const Projects = () => (
   <div
     id="projects"
-    className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 md:py-24"
+    className="flex flex-col items-center justify-center w-full min-h-screen gap-16 p-4 md:px-14 md:py-24"
   >
     <ScrollReveal>
       <h1 className="text-4xl font-light text-white md:text-6xl">
