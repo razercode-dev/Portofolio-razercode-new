@@ -16,53 +16,49 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 z-10 flex w-full
-      items-center justify-between border-b border-gray-700
-      bg-black/70 px-16 py-6 text-white backdrop-blur-md md:justify-evenly"
+      className="fixed top-0 z-10 flex items-center justify-between w-full px-16 py-6 text-white border-b border-gray-700 bg-black/40 backdrop-blur-md md:justify-evenly"
     >
 
       <a
         href="#home"
-        className="bg-gradient-to-r from-cyan-500 to-gray-500 bg-clip-text
-        text-transparent opacity-80 text-3xl font-semibold
-        transition-all duration-300 hover:opacity-100"
+        className="text-3xl font-semibold text-transparent transition-all duration-300 bg-white bg-clip-text opacity-80 hover:opacity-100"
       >
         Sultan
       </a>
 
-      <ul className="hidden md:flex gap-10">
+      <ul className="hidden gap-10 md:flex">
         <li>
-          <a href="#home" className="opacity-70 hover:opacity-100 transition">
+          <a href="#home" className="transition opacity-70 hover:opacity-100">
             Home
           </a>
         </li>
 
         <li>
-          <a href="#technology" className="opacity-70 hover:opacity-100 transition">
+          <a href="#technology" className="transition opacity-70 hover:opacity-100">
             Technology
           </a>
         </li>
 
         <li>
-          <a href="#projects" className="opacity-70 hover:opacity-100 transition">
+          <a href="#projects" className="transition opacity-70 hover:opacity-100">
             Projects
           </a>
         </li>
 
         <li>
-          <a href="#contact" className="opacity-70 hover:opacity-100 transition">
+          <a href="#contact" className="transition opacity-70 hover:opacity-100">
             Contact
           </a>
         </li>
       </ul>
 
       {/* Desktop Social */}
-      <ul className="hidden md:flex gap-5">
+      <ul className="hidden gap-5 md:flex">
 
         <li>
           <button
             onClick={() => openLink("https://www.youtube.com/@razercode_dev")}
-            className="opacity-70 hover:text-red-500 hover:opacity-100 transition"
+            className="transition opacity-70 hover:text-red-500 hover:opacity-100"
           >
             <BsYoutube size={20}/>
           </button>
@@ -71,7 +67,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => openLink("https://github.com/razercode-dev")}
-            className="opacity-70 hover:text-gray-400 hover:opacity-100 transition"
+            className="transition opacity-70 hover:text-gray-400 hover:opacity-100"
           >
             <BsGithub size={20}/>
           </button>
@@ -80,7 +76,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => openLink("https://instagram.com")}
-            className="opacity-70 hover:text-pink-500 hover:opacity-100 transition"
+            className="transition opacity-70 hover:text-pink-500 hover:opacity-100"
           >
             <BsInstagram size={20}/>
           </button>
@@ -89,7 +85,7 @@ const Navbar = () => {
         <li>
           <button
             onClick={() => openLink("https://twitter.com")}
-            className="opacity-70 hover:text-blue-500 hover:opacity-100 transition"
+            className="transition opacity-70 hover:text-blue-500 hover:opacity-100"
           >
             <BsTwitter size={20}/>
           </button>
@@ -99,9 +95,9 @@ const Navbar = () => {
 
       {/* Mobile Toggle */}
       {isOpen ? (
-        <BiX className="block md:hidden text-4xl" onClick={menuOpen}/>
+        <BiX className="block text-4xl md:hidden" onClick={menuOpen}/>
       ) : (
-        <BiMenu className="block md:hidden text-4xl" onClick={menuOpen}/>
+        <BiMenu className="block text-4xl md:hidden" onClick={menuOpen}/>
       )}
 
       {/* Mobile Menu */}
@@ -117,7 +113,7 @@ const Navbar = () => {
               <a
                 href="#home"
                 onClick={() => setIsOpen(false)}
-                className="opacity-70 hover:opacity-100 transition"
+                className="transition opacity-70 hover:opacity-100"
               >
                 Home
               </a>
@@ -127,7 +123,7 @@ const Navbar = () => {
               <a
                 href="#technology"
                 onClick={() => setIsOpen(false)}
-                className="opacity-70 hover:opacity-100 transition"
+                className="transition opacity-70 hover:opacity-100"
               >
                 Technology
               </a>
@@ -137,7 +133,7 @@ const Navbar = () => {
               <a
                 href="#projects"
                 onClick={() => setIsOpen(false)}
-                className="opacity-70 hover:opacity-100 transition"
+                className="transition opacity-70 hover:opacity-100"
               >
                 Projects
               </a>
@@ -147,7 +143,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="opacity-70 hover:opacity-100 transition"
+                className="transition opacity-70 hover:opacity-100"
               >
                 Contact
               </a>
@@ -161,7 +157,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => openLink("https://www.youtube.com/@razercode_dev")}
-                className="opacity-70 hover:text-red-500 hover:opacity-100 transition"
+                className="transition opacity-70 hover:text-red-500 hover:opacity-100"
               >
                 <BsYoutube size={22}/>
               </button>
@@ -170,7 +166,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => openLink("https://github.com/razercode-dev")}
-                className="opacity-70 hover:text-gray-400 hover:opacity-100 transition"
+                className="transition opacity-70 hover:text-gray-400 hover:opacity-100"
               >
                 <BsGithub size={22}/>
               </button>
@@ -179,7 +175,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => openLink("https://instagram.com/rz.coding")}
-                className="opacity-70 hover:text-pink-500 hover:opacity-100 transition"
+                className="transition opacity-70 hover:text-pink-500 hover:opacity-100"
               >
                 <BsInstagram size={22}/>
               </button>
@@ -188,7 +184,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={() => openLink("https://twitter.com/rz_coding")}
-                className="opacity-70 hover:text-blue-500 hover:opacity-100 transition"
+                className="transition opacity-70 hover:text-blue-500 hover:opacity-100"
               >
                 <BsTwitter size={22}/>
               </button>

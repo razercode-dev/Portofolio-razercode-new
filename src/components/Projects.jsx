@@ -111,7 +111,7 @@ const ProjectsCard = ({ project }) => (
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-4 py-2 text-sm font-medium rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-400 backdrop-blur-sm"
+              className="px-4 py-2 text-sm font-medium text-white rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm"
             >
               {tech}
             </span>
@@ -121,7 +121,7 @@ const ProjectsCard = ({ project }) => (
           <a
             href={project.demo}
             target="_blank"
-            className="px-4 py-2 text-sm font-semibold text-white transition rounded-lg bg-cyan-500 hover:bg-cyan-600"
+            className="px-4 py-2 text-sm font-semibold text-white transition bg-gray-700 rounded-lg hover:bg-gray-800"
           >
             Live Demo
           </a>
@@ -129,7 +129,7 @@ const ProjectsCard = ({ project }) => (
           <a
             href={project.github}
             target="_blank"
-            className="px-4 py-2 text-sm font-semibold transition border rounded-lg border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-white"
+            className="px-4 py-2 text-sm font-semibold text-white transition border border-white rounded-lg hover:bg-black hover:text-white"
           >
             GitHub
           </a>
