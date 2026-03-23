@@ -14,11 +14,11 @@ const ProjectsData = [
   {
     id: "2",
     image: "/2.png",
-    title: "Gradient Color Generator",
-    description: "A simple gradient color generator built with Javascript...",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    demo: "https://gradient-color-generator-delta.vercel.app",
-    github: "https://github.com/razercode-dev/gradient-color-generator",
+    title: "AI Chat App",
+    description: "AI Chat App built in API and  working chat app.",
+    technologies: ["React", "Vite", "Tailwind CSS"],
+    demo: "https://ai-chat-app-rosy-kappa.vercel.app/",
+    github: "https://github.com/razercode-dev/ai-chat-apps",
   },
   {
     id: "3",
