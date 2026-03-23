@@ -5,11 +5,11 @@ const ProjectsData = [
   {
     id: "1",
     image: "/1.png",
-    title: "Tic Tac Toe Game",
-    description: "A simple tic tac toe game built with Javascript...",
+    title: "WEather App",
+    description: "A simple weather app built in a API Integration and Javascript",
     technologies: ["HTML", "CSS", "JavaScript"],
-    demo: "https://tic-tac-toe-games-five.vercel.app",
-    github: "https://github.com/razercode-dev/TicTacToe-Games",
+    demo: "https://weather-app-beige-six-87.vercel.app/",
+    github: "https://github.com/razercode-dev/weather-app",
   },
   {
     id: "2",
