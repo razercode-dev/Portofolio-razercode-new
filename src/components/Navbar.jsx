@@ -21,7 +21,7 @@ const Navbar = () => {
 
       <a
         href="#home"
-        className="text-3xl font-semibold text-transparent transition-all duration-300 bg-white bg-clip-text opacity-80 hover:opacity-100"
+        className="text-3xl font-[Cinzel] font-semibold text-transparent transition-all duration-300 bg-white bg-clip-text opacity-80 hover:opacity-100"
       >
         Sultan
       </a>

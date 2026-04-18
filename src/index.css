@@ -1,11 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 *{
   font-family: 'Lexend', sans-serif;
   scroll-behavior: smooth;
 }
+
 
 ::-webkit-scrollbar {
   width: 20px;
@@ -16,5 +22,15 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background: linear-gradient(to bottom, teal, aqua);
+  background: linear-gradient(to bottom, #0b0f1a, #05070d);
+}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0 }
+  50% { opacity: 1 }
+  100% { transform: translateY(-200px); opacity: 0 }
+}
+
+.animate-float {
+  animation: float linear infinite;
 }
