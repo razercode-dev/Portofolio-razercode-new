@@ -152,7 +152,6 @@ const ProjectsCard = ({ project }) => (
         />
       </motion.div>
 
-      {/* CONTENT */}
       <div className="flex flex-col justify-center flex-1 gap-4">
 
         <h2 className="text-xl font-semibold text-white sm:text-2xl">
